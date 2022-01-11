@@ -23,12 +23,7 @@ export default function useLocator() {
 
         setReading(false);
 
-        return {
-            datetime: new Date(location.timestamp),
-            latitude: location.coords.latitude,
-            longitude: location.coords.longitude,
-            accuracy: location.coords.accuracy,
-        };
+        return location;
     }
 
     return {

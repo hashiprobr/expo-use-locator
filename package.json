@@ -1,7 +1,7 @@
 {
   "name": "@hashiprobr/expo-use-locator",
-  "version": "1.0.0",
-  "description": "TODO",
+  "version": "1.0.1",
+  "description": "A React Hook for simplifying the usage of expo-location",
   "keywords": [
     "JavaScript",
     "React",
@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "expo": "^43.0.5",
-    "expo-location": "^14.0.1",
+    "expo-location": "^13.0.4",
     "react": "^17.0.1",
     "react-native": ">=0.64.3"
   }
