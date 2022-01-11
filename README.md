@@ -80,7 +80,7 @@ export default function MyComponent() {
             style={{
                 flexGrow: 1,
                 justifyContent: 'center',
-                alignSelf: 'center',
+                alignItems: 'center',
             }}
         >
             {locator.reading ? (
