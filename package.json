@@ -1,6 +1,6 @@
 {
   "name": "@hashiprobr/expo-use-locator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React Hook for simplifying basic usage of expo-location",
   "keywords": [
     "JavaScript",

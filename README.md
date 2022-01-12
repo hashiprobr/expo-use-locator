@@ -1,7 +1,8 @@
 expo-use-locator
 ================
 
-**A React Hook for simplifying basic usage of expo-location**
+**A React Hook for simplifying basic usage of
+[expo-location](https://docs.expo.dev/versions/latest/sdk/location/)**
 
 This hook returns an object with two properties:
 
