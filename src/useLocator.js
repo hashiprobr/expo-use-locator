@@ -8,21 +8,21 @@ export default function useLocator() {
     const [reading, setReading] = useState(false);
 
     async function read() {
+        let location;
         setReading(true);
-
-        if (ref.current) {
-            const response = await Location.requestForegroundPermissionsAsync();
-            if (response.granted) {
-                ref.current = false;
-            } else {
-                throw new Error('Could not receive permission');
+        try {
+            if (ref.current) {
+                const response = await Location.requestForegroundPermissionsAsync();
+                if (response.granted) {
+                    ref.current = false;
+                } else {
+                    throw new Error('Could not receive permission');
+                }
             }
+            location = await Location.getCurrentPositionAsync();
+        } finally {
+            setReading(false);
         }
-
-        const location = await Location.getCurrentPositionAsync();
-
-        setReading(false);
-
         return location;
     }
 
