@@ -1,6 +1,8 @@
 expo-use-locator
 ================
 
+[PROJECT DISCONTINUED]
+
 **A React Hook for simplifying basic usage of
 [expo-location](https://docs.expo.dev/versions/latest/sdk/location/)**
 
